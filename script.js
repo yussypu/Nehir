@@ -6,7 +6,7 @@ const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
   // Update the response for the "Yes" button
-  question.innerHTML = "Thank you for the drawing Nehir, graphic design really is your passion <333";
+  question.innerHTML = "Thank you for the art Nehir, graphic design really is your passion <333 (also free Palestine)";
   gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
   // Remove buttons
   yesBtn.style.display = "none";
