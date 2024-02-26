@@ -9,8 +9,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #ff99cc; /* Pink background */
+    background: #ffd9eb; /* Light Pink background */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px; /* Added padding for better visibility on laptops */
 }
 
 .gif {
@@ -27,16 +28,14 @@ h2 {
 
 .btn-group {
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    max-width: 400px; /* Limit max width for laptops */
+    margin: 50px auto; /* Center on the page */
 }
 
 button {
-    position: absolute;
-    width: 150px;
-    height: inherit;
+    position: relative; /* Change from absolute to relative for proper centering */
+    width: 100%;
+    height: 50px;
     color: white;
     font-size: 1.2em;
     border-radius: 30px;
@@ -48,23 +47,18 @@ button {
 }
 
 button:nth-child(1) {
-    margin-left: -200px;
+    margin-bottom: 10px;
     background: #e94d58;
 }
 
 button:nth-child(2) {
-    margin-right: -200px;
     background: white;
     color: #e94d58;
 }
 
 @media (max-width: 600px) {
     /* Adjust styling for smaller screens */
-    body {
-        padding: 10px;
-    }
-
     .btn-group {
-        margin-top: 20px;
+        max-width: none; /* Remove max-width on smaller screens */
     }
 }
